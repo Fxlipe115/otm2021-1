@@ -128,7 +128,7 @@ class SMTInstance : public tabuSearchInstance {
 
         void createInitialPath() {
             path = graph.shortestPath();
-            printPath();
+            //printPath();
         }
 
         void printPath() {
@@ -305,13 +305,6 @@ class SMTInstance : public tabuSearchInstance {
                 }
             }
 
-//            for (auto path : neighborPaths) {
-//                for (PathNodeIt<ListPath<ListDigraph>> node(graph.getGraph(), path); node != INVALID; ++node) {
-//                    std::cout << "Neighbor: " << graph.getGraph().id(node) << std::endl;
-//                }
-//                std::cout << std::endl;                                                            
-//            }                                                                                      
-            
             return neighborPaths;
         }
 
