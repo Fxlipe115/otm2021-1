@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+search_dir=./results_tabu
+outfile=$search_dir/results.csv
+
+echo "instance,best_objective,time" > $outfile
+
+for filename in "$search_dir"/*.out
+do
+    declare instance=$(basename $filename .out)
+    declare best_objective=$(cat $filename | grep "Best result:" | awk '{print $3}')
+    declare time=$(cat $filename | grep "Run time:" | awk '{print $3}')
+    echo $instance,$best_objective,$time >> $outfile
+done
+

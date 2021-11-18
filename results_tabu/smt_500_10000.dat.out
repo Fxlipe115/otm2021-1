@@ -1,0 +1,14 @@
+1 -> 22 -> 168 -> 495
+Best result on iteration 0: 1262
+Best result on iteration 250: 775
+Best result on iteration 500: 775
+Best result on iteration 750: 775
+Best result on iteration 1000: 775
+Best result on iteration 1250: 775
+Best result on iteration 1500: 775
+Best result on iteration 1750: 775
+Best result on iteration 2000: 775
+Best result on iteration 2250: 775
+Best result on iteration 2500: 775
+Run time: 7201
+Best result: 775

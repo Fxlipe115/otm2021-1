@@ -1,0 +1,30 @@
+Academic license - for non-commercial use only - expires 2022-01-02
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 4 physical cores, 4 logical processors, using up to 1 threads
+Optimize a model with 44 rows, 58 columns and 90 nonzeros
+Model fingerprint: 0xf1c463d6
+Model has 48 quadratic constraints
+Variable types: 9 continuous, 49 integer (49 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 2e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 9e+01]
+  QRHS range       [1e+01, 8e+01]
+Presolve removed 44 rows and 58 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 65 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.500000000000e+01, best bound 6.500000000000e+01, gap 0.0000%
+
+User-callback calls 36, time in user-callback 0.00 sec
+Termination status: OPTIMAL
+Solve time: 0.008805990219116211

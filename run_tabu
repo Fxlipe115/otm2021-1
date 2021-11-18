@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+search_dir=./instances
+out_dir=./results_tabu
+script="./tabu"
+let time=4*60*60
+
+for filename in "$search_dir"/*
+do
+    echo Running $filename
+    declare outfile=$out_dir/$(basename $filename).out
+    $script $time < $filename > $outfile &
+    echo Finished
+    echo $outfile generated
+done
+

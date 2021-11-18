@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+search_dir=./results_julia
+outfile=$search_dir/results.csv
+
+echo "instance,best_objective,time,termination_status" > $outfile
+
+for filename in "$search_dir"/*.out
+do
+    declare instance=$(basename $filename .out)
+    declare best_objective=$(cat $filename | grep "Best objective" | awk -F "[, ]" '{print $3}')
+    declare time=$(cat $filename | grep "Solve time" | awk '{print $3}')
+    declare termination_status=$(cat $filename | grep "Termination status" | awk '{print $3}')
+    echo $instance,$best_objective,$time,$termination_status >> $outfile
+done
+
